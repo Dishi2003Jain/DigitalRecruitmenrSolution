@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+  <div class="container">
+    <nav class="topnav">
+      <a class="active" href="#home" onclick="activateLink(event)">HOME</a>
+      <a href="#about" onclick="activateLink(event)">ABOUT</a>
+      <a href="#candidatesearch" onclick="activateLink(event)">CANDIDATE SEARCH</a>
+      <div class="topnav-right">
+        <a href="#logout" onclick="activateLink(event)" id="logout">LOGOUT</a>
+      </div>
+    </nav>
+      <div class="homepage">
+        <div class="intro">
+          <div class="txt">
+            <div class="rdius" data-aos="fade-left">    
+              <h1>SAY <span>GOODBYE</span> TO TEDIOUS HIRING!!</h1>
+              <p>A digital recruitment solution app is a software application designed to streamline and enhance the recruitment process for businesses and organizations. It leverages digital technologies and platforms to automate and optimize various aspects of recruitment, such as job posting, candidate sourcing, applicant tracking, interview scheduling, and hiring decision-making.</p>
+            </div>
+            <div class="headlines" data-aos="fade-right">
+              <div class="head">
+                Unleash the Power of Technology in Recruitment: Try Our App Today!
+              </div>
+              <div class="head">
+                "Unlock Your Hiring Potential with Our Digital Recruitment Solution"
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+    <div id="about" class="aboutctn">
+      <h1>Key Features of Digital Recruitment Solution App</h1>
+    <div class="keycontainer">
+                <div class="div">
+                  <h1>Centralized Candidate Management</h1>
+                  <p> The online recruitment solution provides a centralized platform for managing and organizing candidate profiles, applications, and hiring stages. This eliminates the need for manual paperwork, streamlines the process, and improves overall efficiency.</p>
+                </div>
+                <div class="div" data-aos="fade-left">
+                  <h1> Applicant Tracking System (ATS)</h1>
+                  <p> An integrated ATS allows hiring managers and HR professionals to track and manage candidate applications throughout the hiring process. It provides a comprehensive view of each candidate's status, facilitates collaboration among team members, and enhances communication</p>
+                </div>
+                <div class="div" data-aos="fade-right">
+                 <h1>Automated Job Posting and Distribution</h1> 
+                 <p>The solution enables automated posting of job openings on multiple platforms, such as job boards, social media, and company websites. This broadens the reach and visibility of job listings, attracting a larger pool of potential candidates</p> 
+                </div>
+                <div class="div"  data-aos="fade-up">
+                 <h1>Customizable Screening and Assessment</h1> 
+                 <p>The solution offers customizable screening and assessment tools to evaluate candidate qualifications, skills, and fit for specific job roles. This streamlines the screening process, ensures consistency, and helps identify the most suitable candidates efficiently
+                 </p> 
+                </div>
+                <div class="div"  data-aos="zoom-in">
+                   <h1>Candidate Search and Match </h1>
+                 <p> The solution includes advanced search functionality that enables hiring managers and HR professionals to find candidates based on specific criteria such as location, experience, education, and skills. It may also utilize AI-driven algorithms to provide candidate recommendations based on job requirements</p>
+                </div>
+                <div class="div" data-aos="flip-up">
+                <h1>Communication and Collaboration Tools </h1>
+                <p> Effective communication is crucial during the hiring process. The solution provides built-in communication tools, such as email integration or messaging systems, to facilitate seamless and timely communication with candidates, interview scheduling, and feedback sharing
+                </div>
+          </div>
+        </div>
+        <div id="candidatesearch" class="cancon">
+          <div class="candidateSearchContainer">
+            <h2 class="candidateSearchTitle">Candidate Search</h2>
+            <form id="searchForm" class="searchForm">
+              <label for="locationInput" class="formLabel">Location:</label>
+              <select id="locationInput" class="formSelect">
+                <option value="">All Locations</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Kolkata">Kolkata</option>
+                <option value="Chennai">Chennai</option>
+              </select>
+              <label for="jobRoleInput" class="formLabel">Job Role:</label>
+              <select id="jobRoleInput" class="formSelect">
+                <option value="">All Job Roles</option>
+                <option value="Role X">Role X</option>
+                <option value="Role Y">Role Y</option>
+                <option value="Role Z">Role Z</option>
+              </select>
+              <button type="submit" class="searchButton">Search</button>
+            </form>
+          </div>
+          
+          <div id="candidatesList" class="candidatesList"></div>
+                   
+        </div>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+          <script>
+            AOS.init({
+              duration: 2000,
+            });
+          </script>
+      <script src="JS/script.js"></script>
+</body>
+</html>
