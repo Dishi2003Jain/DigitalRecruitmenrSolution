@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // Here, you can use a library like Axios or the built-in Fetch API
       console.log({email,password});
       // Example using Fetch API:
-      fetch('http://localhost:5000/api/login', {
+      fetch('https://digitalrecbackend.onrender.com/api/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

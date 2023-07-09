@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Here, you can use a library like Axios or the built-in Fetch API
 
     // Example using Fetch API:
-    fetch('http://localhost:5000/api/register', {
+    fetch('https://digitalrecbackend.onrender.com/api/register', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

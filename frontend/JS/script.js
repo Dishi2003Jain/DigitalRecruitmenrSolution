@@ -13,6 +13,10 @@ function activateLink(event) {
     window.location.href = 'login.html';
     alert("You have been logged out successfully!")
   });
+  document.getElementById('login').addEventListener('click', function() {
+    window.location.href = 'login.html';
+    alert("You have been logged out successfully!")
+  });
   
   document.addEventListener('DOMContentLoaded', () => {
     const searchForm = document.getElementById('searchForm');
